@@ -4,12 +4,45 @@
  * @Autor: czklove
  * @Date: 2019-11-11 10:07:17
  * @LastEditors: czklove
- * @LastEditTime: 2019-11-18 11:43:01
+ * @LastEditTime: 2019-11-18 16:34:31
  -->
 <template>
   <div id="app">
-    <Button @click="gotoclick">忘记你</Button>
-    <router-view></router-view>
+    <header>czklove</header>
+    <div>
+      <nav></nav>
+      <div>
+        <ul>
+          <li>
+            <Button @click="gotoclick">提交</Button>
+          </li>
+          <li>
+            <Button @click="gotoclick" type="default">default</Button>
+          </li>
+          <li>
+            <Button @click="gotoclick" type="success">success</Button>
+          </li>
+          <li>
+            <Button @click="gotoclick" type="error">error</Button>
+          </li>
+          <li>
+            <Button @click="gotoclick" type="danger">danger</Button>
+          </li>
+          <li>
+            <Button @click="gotoclick" size="langer">danger</Button>
+          </li>
+          <li>
+            <Button @click="gotoclick" type="normal">danger</Button>
+          </li>
+          <li>
+            <Button @click="gotoclick" type="small">danger</Button>
+          </li>
+          <li>
+            <Button @click="gotoclick" type="mini">danger</Button>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -29,7 +62,6 @@ export default class App extends Vue {
     console.log(13131313)
   }
   created () {
-    console.log(Button)
   }
 }
 </script>
