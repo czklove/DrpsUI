@@ -1,8 +1,16 @@
+<!--
+ * @Description: 
+ * @Version: 2.0
+ * @Autor: czklove
+ * @Date: 2019-11-11 10:07:55
+ * @LastEditors: czklove
+ * @LastEditTime: 2019-11-18 16:11:27
+ -->
 # drms
 
 ## Project setup
 ```
-npm install
+npm install drmsui
 ```
 
 ### Compiles and hot-reloads for development
