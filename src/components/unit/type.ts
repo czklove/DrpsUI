@@ -4,7 +4,7 @@
  * @Autor: czklove
  * @Date: 2019-11-11 15:41:01
  * @LastEditors: czklove
- * @LastEditTime: 2019-11-18 10:56:11
+ * @LastEditTime: 2019-11-19 16:36:59
  */
 import Vue, { VNode, ComponentOptions, VueConstructor } from 'vue';
 
@@ -15,7 +15,7 @@ export type DefaultSlots = {
 
 export type ObjectIndex = Record<string, any>
 
-export type ScopedSlots = DefaultSlots & {
+export type ScopedSlots = {
   [key: string]: ScopedSlot | undefined;
 }
 

@@ -4,7 +4,7 @@
  * @Autor: czklove
  * @Date: 2019-11-11 10:49:26
  * @LastEditors: czklove
- * @LastEditTime: 2019-11-18 11:33:52
+ * @LastEditTime: 2019-11-19 17:23:27
  */
 import Vue, { VNode, CreateElement, VueConstructor } from 'vue'
 import { DefaultProps, PropsDefinition, InjectOptions, RenderContext, ComponentOptions } from 'vue/types/options'
@@ -27,14 +27,14 @@ export function transformFunctionComponent (fn:FunctionComponent): DrmsComponent
  */
 export function CreateComponent (name:string) {
   return function <Props = DefaultProps, Events = {}, Slots = {}> (
-    sfc:DrmsComponentOptions | FunctionComponent):TsxComponent<Props, Events, Slots> {
+    sfc:DrmsComponentOptions | FunctionComponent) {
     if (typeof sfc === 'function') {
       sfc = transformFunctionComponent(sfc)
     }
     sfc.functional = true
     sfc.name = 'drms-' + name
     sfc.install = install
-    return sfc as TsxComponent<Props, Events, Slots>
+    return sfc
   }
 }
 

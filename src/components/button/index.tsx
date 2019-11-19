@@ -4,7 +4,7 @@
  * @Autor: czklove
  * @Date: 2019-11-11 10:43:29
  * @LastEditors: czklove
- * @LastEditTime: 2019-11-18 11:03:11
+ * @LastEditTime: 2019-11-19 17:30:51
  */
 
 import Vue, { CreateElement, RenderContext, ComponentOptions } from 'vue'
@@ -26,6 +26,13 @@ type ButtonEvents = {
 }
 type ButtonSize = 'large' | 'normal' | 'small' | 'mini'
 type ButtonType = 'default' | 'primary' | 'info' | 'warning' | 'danger'
+
+/**
+ * @description:
+ * @param {type}
+ * @return:
+ * @author: czklove
+ */
 function Button (h: CreateElement, props: ButtonProps, slots: DefaultSlots, ctx: RenderContext<ButtonProps>) {
   const { tag, size, type } = props
   let text
@@ -34,11 +41,11 @@ function Button (h: CreateElement, props: ButtonProps, slots: DefaultSlots, ctx:
   function onClick (event: Event) {
     emit(ctx, 'click', event)
   }
+  let classes = [size, type]
   return (
     <tag
       onClick = {onClick}
-      class = {type}
-      size = {size}
+      class = {classes}
     >
       {text}
     </tag>

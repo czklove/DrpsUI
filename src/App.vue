@@ -4,7 +4,7 @@
  * @Autor: czklove
  * @Date: 2019-11-11 10:07:17
  * @LastEditors: czklove
- * @LastEditTime: 2019-11-18 16:34:31
+ * @LastEditTime: 2019-11-19 17:30:30
  -->
 <template>
   <div id="app">
@@ -14,31 +14,31 @@
       <div>
         <ul>
           <li>
-            <Button @click="gotoclick">提交</Button>
+            <drms-button @click="gotoclick">提交</drms-button>
           </li>
           <li>
-            <Button @click="gotoclick" type="default">default</Button>
+            <drms-button @click="gotoclick" type="default">default</drms-button>
           </li>
           <li>
-            <Button @click="gotoclick" type="success">success</Button>
+            <drms-button @click="gotoclick" type="success">success</drms-button>
           </li>
           <li>
-            <Button @click="gotoclick" type="error">error</Button>
+            <drms-button @click="gotoclick" type="error">error</drms-button>
           </li>
           <li>
-            <Button @click="gotoclick" type="danger">danger</Button>
+            <drms-button @click="gotoclick" type="danger">danger</drms-button>
           </li>
           <li>
-            <Button @click="gotoclick" size="langer">danger</Button>
+            <drms-button @click="gotoclick" size="langer">submit</drms-button>
           </li>
           <li>
-            <Button @click="gotoclick" type="normal">danger</Button>
+            <drms-button @click="gotoclick" type="normal">submit</drms-button>
           </li>
           <li>
-            <Button @click="gotoclick" type="small">danger</Button>
+            <drms-button @click="gotoclick" type="small">submit</drms-button>
           </li>
           <li>
-            <Button @click="gotoclick" type="mini">danger</Button>
+            <drms-button @click="gotoclick" type="mini" tag="a">submit</drms-button>
           </li>
         </ul>
       </div>
@@ -49,7 +49,7 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
 import HelloWorld from './components/HelloWorld.vue'
-import Button from './components/button/index.tsx'
+import Button from './components/button'
 
 @Component({
   components: {
@@ -74,5 +74,12 @@ export default class App extends Vue {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  ul{
+    list-style: none;
+    li{
+      text-align: left;
+      margin-top: 10px;
+    }
+  }
 }
 </style>
