@@ -1,11 +1,64 @@
 button {
-  padding: 5px 10px;
+  height: 36px;
+  line-height: 36px;
+  padding: 0px 12px;
   border-radius: 3px;
-  border: none;
+  border: 1px solid transparent;
+  outline: none;
+  border-color: #dcdee2;
+  font-size: 14px;
+  background-color: #fff;
 }
-button.default {
-  background-color: #bdb5b5;
+button:hover {
+  color: #57a3f3;
+  background-color: #fff;
+  border-color: #57a3f3;
 }
-button.default:hover {
-  background-color: #bdb5b5;
+button.success{
+  background-color: #19be6b;
+  border-color: #19be6b;
+  color: #fff;
+}
+button.success:hover{
+  background-color: #47cb89;
+  border-color: #47cb89;
+}
+button.error{
+  color: #fff;
+  background-color: #ed4014;
+  border-color: #ed4014;
+}
+button.error:hover{
+  background-color: #f16643;
+  border-color: #f16643;
+}
+button.danger{
+  color: #fff;
+  background-color: #f90;
+  border-color: #f90;
+}
+button.danger:hover{
+  background-color: #ffad33;
+  border-color: #ffad33;
+}
+button.large{
+  height: 40px;
+  line-height: 40px;
+  padding: 0 15px;
+  font-size: 16px;
+  border-radius: 4px;
+}
+button.mini{
+  height: 26px;
+  line-height: 26px;
+  padding: 0 6px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+button.small{
+  line-height: 32px;
+  height: 32px;
+  padding: 0 8px;
+  font-size: 14px;
+  border-radius: 4px;
 }

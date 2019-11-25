@@ -4,7 +4,7 @@
  * @Autor: czklove
  * @Date: 2019-11-11 10:43:29
  * @LastEditors: czklove
- * @LastEditTime: 2019-11-19 17:30:51
+ * @LastEditTime: 2019-11-25 17:21:38
  */
 
 import Vue, { CreateElement, RenderContext, ComponentOptions } from 'vue'
@@ -36,7 +36,6 @@ type ButtonType = 'default' | 'primary' | 'info' | 'warning' | 'danger'
 function Button (h: CreateElement, props: ButtonProps, slots: DefaultSlots, ctx: RenderContext<ButtonProps>) {
   const { tag, size, type } = props
   let text
-  console.log(slots)
   text = slots.default ? slots.default() : props.text
   function onClick (event: Event) {
     emit(ctx, 'click', event)

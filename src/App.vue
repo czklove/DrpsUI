@@ -4,7 +4,7 @@
  * @Autor: czklove
  * @Date: 2019-11-11 10:07:17
  * @LastEditors: czklove
- * @LastEditTime: 2019-11-19 17:30:30
+ * @LastEditTime: 2019-11-25 17:25:47
  -->
 <template>
   <div id="app">
@@ -14,10 +14,7 @@
       <div>
         <ul>
           <li>
-            <drms-button @click="gotoclick">提交</drms-button>
-          </li>
-          <li>
-            <drms-button @click="gotoclick" type="default">default</drms-button>
+            <drms-button @click="gotoclick">default</drms-button>
           </li>
           <li>
             <drms-button @click="gotoclick" type="success">success</drms-button>
@@ -29,18 +26,57 @@
             <drms-button @click="gotoclick" type="danger">danger</drms-button>
           </li>
           <li>
-            <drms-button @click="gotoclick" size="langer">submit</drms-button>
+            <drms-button @click="gotoclick" size="large">langer</drms-button>
           </li>
           <li>
-            <drms-button @click="gotoclick" type="normal">submit</drms-button>
+            <drms-button @click="gotoclick" size="normal">normal</drms-button>
           </li>
           <li>
-            <drms-button @click="gotoclick" type="small">submit</drms-button>
+            <drms-button @click="gotoclick" size="small">small</drms-button>
           </li>
           <li>
-            <drms-button @click="gotoclick" type="mini" tag="a">submit</drms-button>
+            <drms-button @click="gotoclick" size="mini">mini</drms-button>
+          </li>
+          <li>
+            <drms-button @click="gotoclick" size="large" type="success">large+success</drms-button>
           </li>
         </ul>
+      </div>
+      <div>
+        <drms-Row>
+          <drms-Col span='4'>
+            col4
+          </drms-Col>
+          <drms-Col span='4'>
+            col4
+          </drms-Col>
+          <drms-Col span='4'>
+            col4
+          </drms-Col>
+          <drms-Col span='4'>
+            col4
+          </drms-Col>
+          <drms-Col span='4'>
+            col4
+          </drms-Col>
+          <drms-Col span='4'>
+            col4
+          </drms-Col>
+        </drms-Row>
+        <drms-Row>
+          <drms-Col span='6'>
+            col6
+          </drms-Col>
+          <drms-Col span='6'>
+            col6
+          </drms-Col>
+          <drms-Col span='6'>
+            col6
+          </drms-Col>
+          <drms-Col span='6'>
+            col6
+          </drms-Col>
+        </drms-Row>
       </div>
     </div>
   </div>
@@ -50,11 +86,14 @@
 import { Component, Vue } from 'vue-property-decorator'
 import HelloWorld from './components/HelloWorld.vue'
 import Button from './components/button'
+import { Row, Col } from './components/grid'
 
 @Component({
   components: {
     HelloWorld,
-    'drms-button': Button
+    'drms-button': Button,
+    'drms-Row': Row,
+    'drms-Col': Col
   }
 })
 export default class App extends Vue {
