@@ -78,6 +78,11 @@
           </drms-Col>
         </drms-Row>
       </div>
+      <div class="swipe">
+        <drms-swipe :time='2000' :speed = '1000'>
+          <img v-for="(item,index) in imgs" :src="item" :key="`${index}li`" :title='`${index+1}图片`'/>
+        </drms-swipe>
+      </div>
     </div>
   </div>
 </template>
@@ -102,6 +107,17 @@ export default class App extends Vue {
   }
   created () {
   }
+  data () {
+    return {
+      imgs: [
+        require('./assets/01.jpg'),
+        require('./assets/02.jpg'),
+        require('./assets/03.jpg'),
+        require('./assets/04.jpg'),
+        require('./assets/05.jpg')
+      ]
+    }
+  }
 }
 </script>
 
@@ -118,6 +134,11 @@ export default class App extends Vue {
     li{
       text-align: left;
       margin-top: 10px;
+    }
+  }
+  .swipe{
+    img{
+      width: 100%;
     }
   }
 }

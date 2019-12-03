@@ -10,7 +10,9 @@ import Vue, { CreateElement } from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import Swipe from './components/swipe'
 Vue.config.productionTip = false
+Vue.use(Swipe)
 
 new Vue({
   router,
