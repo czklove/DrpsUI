@@ -1,5 +1,5 @@
 <!--
- * @Description:
+ * @Description: 修改app
  * @Version: 2.0
  * @Autor: czklove
  * @Date: 2019-11-11 10:07:17
