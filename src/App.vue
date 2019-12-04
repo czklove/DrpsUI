@@ -79,8 +79,8 @@
         </drms-Row>
       </div>
       <div class="swipe">
-        <drms-swipe :time='2000' :speed = '1000'>
-          <img v-for="(item,index) in imgs" :src="item" :key="`${index}li`" :title='`${index+1}图片`'/>
+        <drms-swipe :time='2000' :speed = '1000' :changetype="'right'">
+          <img v-for="(item,index) in imgs" :src="item" :key="`lqi${index+1}`" :title='`${index+1}图片`'/>
         </drms-swipe>
       </div>
     </div>
