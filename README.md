@@ -1,8 +1,8 @@
-# drms
+# DRMSUI库
 
 ## Project setup
 ```
-npm install
+npm install drmsUi
 ```
 
 ### Compiles and hot-reloads for development
