@@ -1,34 +1,10 @@
 # DRMSUI库
+简单的vue ui 组件库
 
-## Project setup
+Dome [点击前往谷歌搜索](https://www.google.com.hk/)
+## 开始使用
 ```
 npm install drmsUi
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Run your unit tests
-```
-npm run test:unit
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
